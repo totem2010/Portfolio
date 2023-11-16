@@ -1,0 +1,19 @@
+select AVG(salary) as 'Average Salary' , Gender
+from [Salary ]..['Salary db$']
+group by Gender 
+order by 1 desc
+
+select AVG(salary) as 'Average Salary' , [Job Title]
+from [Salary ]..['Salary db$']
+group by [Job Title]
+order by 1 desc
+
+select AVG(salary) as 'Average Salary' , Age
+from [Salary ]..['Salary db$']
+group by Age
+order by 2
+
+select AVG(salary) as 'Average Salary' , Race  
+from [Salary ]..['Salary db$']
+group by Race
+order by 1 
